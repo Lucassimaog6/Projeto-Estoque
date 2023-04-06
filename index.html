@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Aplicação</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script defer src="script.js"></script>
-		<script src="https://cdn.tailwindcss.com"></script>
-	</head>
-	<body class="px-[20%] bg-sky-100 flex justify-center items-center flex-col gap-4 p-4">
-		<h1 class="text-4xl font-bold text-center">Cadastros de produtos</h1>
-		<div class="grid grid-cols-2 justify-center items-center gap-4 mx-auto">
-			<label for="name"
-				>Nome
-				<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="name" />
-			</label>
 
-			<label for="amount"
-				>Quantidade
-				<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="amount" />
-			</label>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Aplicação</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script defer src="script.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-			<label for="price"
-				>Preço
-				<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="price" />
-			</label>
+<body class="px-[20%] bg-sky-100 flex justify-center items-center flex-col gap-4 p-4">
+	<h1 class="text-4xl font-bold text-center">Cadastros de produtos</h1>
+	<div class="grid grid-cols-2 justify-center items-center gap-4 mx-auto">
+		<label for="name">Nome
+			<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="name" />
+		</label>
 
-			<label for="shelf"
-				>Prateleira
-				<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="shelf" />
-			</label>
+		<label for="amount">Quantidade
+			<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="amount" />
+		</label>
 
-			<label for="description"
-				>Descrição
-				<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="description" />
-			</label>
+		<label for="price">Preço
+			<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="price" />
+		</label>
 
-			<label for="category"
-				>Categoria
-				<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="category" />
-			</label>
-		</div>
-		<div>
-			<button class="bg-green-400 py-2 px-4 rounded" id="cadastrar">Cadastrar</button>
-			<button class="bg-red-400 py-2 px-4 rounded" id="excluir">Excluir</button>
-			<button class="bg-sky-400 py-2 px-4 rounded" id="editar">Editar</button>
-		</div>
-		<table class="w-full border border-black/50">
-			<tr>
-				<thead class="table-auto bg-black/10">
-					<tr class="text-center">
-						<th></th>
-						<th>Nome</th>
-						<th>Quantidade</th>
-						<th>Preço</th>
-						<th>Descrição</th>
-						<th>Prateleira</th>
-						<th>Categoria</th>
-					</tr>
-				</thead>
-				<tbody></tbody>
-			</tr>
-		</table>
-	</body>
+		<label for="shelf">Prateleira
+			<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="shelf" />
+		</label>
+
+		<label for="description">Descrição
+			<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="description" />
+		</label>
+
+		<label for="category">Categoria
+			<input class="bg-black/10 p-2 text-xl rounded w-full" type="text" id="category" />
+		</label>
+	</div>
+	<div>
+		<button class="bg-green-400 py-2 px-4 rounded" id="cadastrar">Cadastrar</button>
+		<button class="bg-red-400 py-2 px-4 rounded" id="excluir">Excluir</button>
+		<button class="bg-sky-400 py-2 px-4 rounded" id="editar">Editar</button>
+	</div>
+	<table class="w-full border border-black/50">
+		<tr>
+			<thead class="table-auto bg-black/10">
+				<tr class="text-center">
+					<th></th>
+					<th>Nome</th>
+					<th>Quantidade</th>
+					<th>Preço</th>
+					<th>Descrição</th>
+					<th>Prateleira</th>
+					<th>Categoria</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</tr>
+	</table>
+</body>
+
 </html>
